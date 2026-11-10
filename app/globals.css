@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 system-ui, sans-serif; color: #1b1d1a; background: #f7f7f4; }
+header { padding: 14px 24px; border-bottom: 1px solid #e2e2dc; background: #fff; }
+header a { font-weight: 600; color: inherit; text-decoration: none; }
+main { max-width: 1040px; margin: 0 auto; padding: 24px; display: grid; gap: 20px; }
+h1, h2 { margin: 0 0 12px; }
+h1 { font-size: 24px; } h2 { font-size: 17px; }
+a { color: #2f6b3a; }
+.card { background: #fff; border: 1px solid #e2e2dc; border-radius: 10px; padding: 18px; display: grid; gap: 10px; }
+label { display: grid; gap: 4px; font-size: 13px; color: #555; }
+input, textarea { font: inherit; padding: 8px 10px; border: 1px solid #cfcfc8; border-radius: 6px; }
+button { font: inherit; padding: 8px 14px; border: 0; border-radius: 6px; background: #1b1d1a; color: #fff; cursor: pointer; justify-self: start; }
+button:disabled { opacity: .6; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #eee; font-size: 14px; }
+.muted { color: #777; font-size: 13px; }
+.error { color: #b3261e; margin: 0; }
+.link { display: grid; gap: 6px; padding: 12px; background: #f0f6ee; border-radius: 8px; }
+.link code { word-break: break-all; }
+.badge { padding: 2px 8px; border-radius: 99px; font-size: 12px; background: #eee; }
+.badge.connected { background: #dcefd8; } .badge.link_sent { background: #fbefd2; }
+.split { display: grid; grid-template-columns: 280px 1fr; gap: 20px; }
+.threads { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.threads a { display: block; padding: 8px 10px; border-radius: 6px; text-decoration: none; color: inherit; }
+.threads a.on { background: #e8eee6; }
+.messages { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-height: 50vh; overflow: auto; }
+.messages li { max-width: 75%; padding: 8px 12px; border-radius: 10px; background: #fff; border: 1px solid #e2e2dc; }
+.messages li.outbound { justify-self: end; background: #dcefd8; border-color: #cfe3ca; }
+.reply { display: grid; gap: 8px; }
+@media (max-width: 760px) { .split { grid-template-columns: 1fr; } }

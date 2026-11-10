@@ -1,0 +1,25 @@
+{
+  "name": "whatsapp-saas-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal Next.js app that connects your SaaS customers' WhatsApp numbers with Nodium: one client per customer, a hosted connect link, conversations and replies.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nodium.io/whatsapp": "^0.4.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.2"
+  }
+}
